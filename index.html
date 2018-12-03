@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="./float-grid.css">
     <link rel="stylesheet" href="./index.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik|Work+Sans" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
     <title>Martin's Portfolio</title>
 </head>
@@ -27,7 +29,6 @@
     </nav>
     <main>
         <div class="row">
-
             <div class="col-12">
                 <header class="">
                     <div class="title">
@@ -51,15 +52,13 @@
             <div class="col-12">
                     <h1>Projects</h1>
                 <section>
-                    <div class="image-section">
-                        <a href="
-                            https://martintirtawisata.github.io/PlanIt-GoogleMapsAPI/"
-                        >
+                    <div data-aos="zoom-in-right" class="image-section">
+                        <a href="https://martintirtawisata.github.io/PlanIt-GoogleMapsAPI/">
                             <img src="./img/PlanIt.png" alt="Plan it screenshot">
                         </a>
                     
                     </div>
-                    <div class="desc-section">
+                    <div data-aos="zoom-in-left" class="desc-section">
                         <h1>PlanIt</h1>
                         <p>PlanIt is a simplified mapping system that uses Google Maps API that immediately calculates distances for multiple pinpoint destinations.</p>
                         <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, jQuery, Google Maps API</p> 
@@ -71,13 +70,13 @@
             <!-- Invit -->
             <div class="col-12">
                 <section>
-                    <div class="desc-section">
+                    <div data-aos="zoom-in-right" class="desc-section">
                         <h1>Invit</h1>
                         <p>Invit is a minimalist Inventory Management Systems designed for personal and small business's needs. It allows you to easily create and track all your products with simplicity and no hassle.</p>
                         <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, jQuery, NodeJS, Express, MongoDB, mLAB, Mongoose, PassportJS, JWT, TravisCI, Heroku, Mocha & Chai </p> 
                         <a class="github-link" href="https://github.com/MartinTirtawisata/Invit"><p>Invit Github repository</p></a>
                     </div>
-                    <div class="image-section">
+                    <div data-aos="zoom-in-left" class="image-section">
                         <a href="https://pure-earth-57522.herokuapp.com/">
                             <img src="./img/invit.png" alt="Invit landing page">
                         </a>
@@ -89,13 +88,13 @@
             <!-- Coteam -->
             <div class="col-12">
                 <section>
-                    <div class="image-section">
+                    <div data-aos="zoom-in-right" class="image-section">
                         <a href="https://hidden-shelf-59966.herokuapp.com/">
                             <img src="./img/coteam.png" alt="Coteam landing page">
                         </a>
                         
                     </div>
-                    <div class="desc-section">
+                    <div data-aos="zoom-in-left" class="desc-section">
                         <h1>Coteam</h1>
                         <p>Coteam is a platform that allows users to create a social profile to share with their team to facilitate a better team engagement and environment.</p>
                         <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, ReactJS, Redux, NodeJS, Express, MongoDB, mLAB, Mongoose, PassportJS, JWT, TravisCI, Heroku, Mocha & Chai </p> 
@@ -108,12 +107,16 @@
             <div class="col-12">
                 <h1>Contact Form</h1>
                 <section>
-                    <p>My email is <a href="mailto:martintirtawisata@gmail.com" target="_top">martintirtawisata@gmail.com</a>.</p>
+                    <div data-aos="zoom-in-up">
+                        <p>My email is <a href="mailto:martintirtawisata@gmail.com" target="_top">martintirtawisata@gmail.com</a>.</p>
+                    </div>
                 </section>
             </div>
-
         </div>
     </main>
+    <script>
+        AOS.init();
+    </script>
 </body>
 <footer>
     <p>&copy Martin Tirtawisata</p>
