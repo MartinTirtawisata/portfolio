@@ -2,15 +2,37 @@
     border: 1px solid black;
 }
 
+html {
+    background-image: linear-gradient(to bottom right, rgb(240,240,240), rgb(234,234,234), rgb(131,131,131, 0.3))
+}
+
 /* Only for titles and subtitles */
 .rubik-font {
     font-family: 'Rubik', sans-serif;
 }
 
-p {
-    font-family: 'Work Sans', sans-serif;
+h1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 24px;
+    color: rgb(14,94,140);
+    text-align: center;
 }
 
+p {
+    font-family: 'Work Sans', sans-serif;
+    color: rgb(51,51,51)
+}
+
+hr {
+    width: 10%;
+}
+
+.bold {
+    font-weight: bold;
+    color: rgb(21,138,208)
+}
+
+/* Header */
 .navbar {
     width: 100%;
     height: 60px;
@@ -36,16 +58,78 @@ li {
     font-size: 18px;
 }
 
+.name {
+    font-family: 'Rubik', sans-serif;
+    font-size: 28px;
+    margin: 20px 0 0 0;
+    color: rgb(14,94,140);
+}
 
+.headline {
+    margin: 5 0;
+}
 
+.contact-form{
+    margin: 5 0;
+    /* border-bottom: 5px solid rgb(14,94,140) */
+}
+
+/* Section */
 section {
     display: flex;
+    margin: 25 0
 }
 
 .image-section{
-    width: 55%;
+    width: 60%;
+    border: 2px solid rgb(51,51,51);
+    transition: transform .1s;
+}
+
+.image-section:hover {
+    transform: scale(1.02)
+}
+
+img {
+    width: 100%;
 }
 
 .desc-section{
-    width: 45%;
+    width: 40%;  
+    margin: 2 10; 
 }
+
+.desc-section > h1 {
+    text-align: center;
+}
+
+.github-link {
+    text-decoration: none;
+}
+
+.github-link > p {
+    color: rgb(21,138,208);
+    transition: transform .1s;
+}
+
+.github-link > p:hover {
+    transform: scale(1.04);
+}
+
+.contact-form{
+    text-align: center;
+}
+
+footer {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(51, 51,51);
+    text-align: center;
+}
+
+footer > p {
+    font-size: 14px;
+    padding-top: 15px;
+    color: white;
+}
+
