@@ -8,61 +8,69 @@
     <link href="https://fonts.googleapis.com/css?family=Rubik|Work+Sans" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    
 
     <title>Martin's Portfolio</title>
 </head>
 <body>
-    <nav class="navbar rubik-font">
-        <ul class="left-nav">
-            <a href="#">
-                <li>
-                    Home
-                </li>
-            </a>
-        </ul>
-        <ul class="right-nav">
-            <!-- Should scroll down to wherever it is held -->
-            <a href="#bio"><li>Bio</li></a>
-            <a href="#projects"><li>Projects</li></a>
-            <a href="#contact-form"><li>Contact Form</li></a>
-        </ul>
-    </nav>
     <main>
-        <div class="row">
-            <div class="col-12">
-                <header>
-                    <div class="title">
-                        <p class="name">Martin Tirtawisata</p>
-                        <p class="headline">Hello, I'm Martin. I am a full-stack developer</p>
-                    </div>
-                    <hr>
-                    <h1>About Me</h1>
-                    <div data-aos="zoom-in" id="bio" class="bio">
-                        <p>
-                            I'm an aspiring full stack developer with a strong interest in UI/UX who is hungry for experience. I recently graduated from Thinkful's Full Stack Engineer Bootcamp. I loving coding because it allows you to bring your ideas to life and express your creativity while also teaching you how to think critically when solving a problem. I'm immersed by websites that has enhancing visual effects while being able to maintain awesome user experience.
-                        </p> 
-                        <p>
-                            When I'm not coding, I'm often found playing League of Legends, playing basketball with friends, and finish reading books every month. I'm a lifelong learner and an introverted kind of person who gets along well with people and enjoys punny jokes! 
-                        </p>
-                    </div>  
-                </header>
+        <!-- Title -->
+        <div data-aos="zoom-in" class="title-background-wrapper">
+            <div class="row">
+                <div class="col-12">
+                    <header>
+                        <div class="title">
+                            <div class="text-wrapper">
+                                <p class="name">Martin Tirtawisata</p>
+                                <p class="headline">Hello, I'm Martin. I am a full-stack developer</p>
+                            </div>
+                            <ul class="nav rubik-font">
+                                <a href="#bio"><li>Bio</li></a>
+                                <a href="#projects"><li>Projects</li></a>
+                                <a href="#contact-form"><li>Contact Me</li></a>
+                            </ul>
+                        </div>
+                    </header>
+                </div>
             </div>
-            <hr>
+        </div>
+        <hr>
+        <!-- Bio -->
+        <div class="row">
+            <div id="bio" class="col-12">
+                <div data-aos="zoom-in" class="bio">
+                    <h1>About Me</h1>
+                    <p>
+                        I'm an aspiring full stack developer with a strong interest in UI/UX who is hungry for experience. I recently graduated from Thinkful's Full Stack Engineer Bootcamp. I loving coding because it allows you to bring your ideas to life and express your creativity while also teaching you how to think critically when solving a problem. I'm immersed by websites that has enhancing visual effects while being able to maintain awesome user experience.
+                    </p> 
+                    <p>
+                        When I'm not coding, I'm often found playing League of Legends, playing basketball with friends, and finish reading books every month. I'm a lifelong learner and an introverted kind of person who gets along well with people and enjoys punny jokes! 
+                    </p>
+                </div>  
+            </div>
+        </div>
+        <hr>
+        <!-- Projects -->
+        <div class="row">            
             <!-- PlanIt -->
             <div id="projects" class="col-12">
-                    <h1>Projects</h1>
+                <h1>Projects</h1>
                 <section>
-                    <div data-aos="zoom-in-right" class="image-section">
-                        <a href="https://martintirtawisata.github.io/PlanIt-GoogleMapsAPI/">
-                            <img src="./img/PlanIt.png" alt="Plan it screenshot">
-                        </a>
-                    
+                    <div class="image-section">
+                        <div data-aos="zoom-in-right">
+                            <a href="https://martintirtawisata.github.io/PlanIt-GoogleMapsAPI/">
+                                <img src="./img/PlanIt.png" alt="Plan it screenshot">
+                            </a>
+                        </div>
                     </div>
                     <div data-aos="zoom-in-left" class="desc-section">
-                        <h1>PlanIt</h1>
-                        <p>PlanIt is a simplified mapping system that uses Google Maps API that immediately calculates distances for multiple pinpoint destinations.</p>
-                        <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, jQuery, Google Maps API</p> 
-                        <a class="github-link" href="https://github.com/MartinTirtawisata/PlanIt-GoogleMapsAPI"><p>PlanIt Github repository</p></a>
+                        <div class="desc-wrapper map-location">
+                            <h1>PlanIt</h1>
+                            <p>PlanIt is a simplified mapping system that uses Google Maps API that immediately calculates distances for multiple pinpoint destinations.</p>
+                            <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, jQuery, Google Maps API</p> 
+                            <a class="github-link" href="https://github.com/MartinTirtawisata/PlanIt-GoogleMapsAPI"><p>PlanIt Github repository</p></a>
+                        </div>
                     </div>
                 </section>
             </div>
@@ -71,15 +79,20 @@
             <div class="col-12">
                 <section>
                     <div data-aos="zoom-in-right" class="desc-section">
-                        <h1>Invit</h1>
-                        <p>Invit is a minimalist Inventory Management Systems designed for personal and small business's needs. It allows you to easily create and track all your products with simplicity and no hassle.</p>
-                        <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, jQuery, NodeJS, Express, MongoDB, mLAB, Mongoose, PassportJS, JWT, TravisCI, Heroku, Mocha & Chai </p> 
-                        <a class="github-link" href="https://github.com/MartinTirtawisata/Invit"><p>Invit Github repository</p></a>
+                        <div class="desc-wrapper invit-ims">
+                            <h1>Invit</h1>
+                            <p>Invit is a minimalist Inventory Management Systems designed for personal and small business's needs. It allows you to easily create and track all your products with simplicity and no hassle.</p>
+                            <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, jQuery, NodeJS, Express, MongoDB, mLAB, Mongoose, PassportJS, JWT, TravisCI, Heroku, Mocha & Chai </p> 
+                            <a class="github-link" href="https://github.com/MartinTirtawisata/Invit"><p>Invit Github repository</p></a>
+                        </div>
                     </div>
-                    <div data-aos="zoom-in-left" class="image-section">
-                        <a href="https://pure-earth-57522.herokuapp.com/">
-                            <img src="./img/invit.png" alt="Invit landing page">
-                        </a>
+                    <div class="image-section">
+                        <div data-aos="zoom-in-left">
+                            <a href="https://pure-earth-57522.herokuapp.com/">
+                                <img src="./img/invit.png" alt="Invit landing page">
+                            </a>
+                        </div>
+                        
                         
                     </div>
                 </section>
@@ -88,29 +101,43 @@
             <!-- Coteam -->
             <div class="col-12">
                 <section>
-                    <div data-aos="zoom-in-right" class="image-section">
-                        <a href="https://hidden-shelf-59966.herokuapp.com/">
-                            <img src="./img/coteam.png" alt="Coteam landing page">
-                        </a>
-                        
+                    <div class="image-section">
+                        <div data-aos="zoom-in-right">
+                            <a href="https://hidden-shelf-59966.herokuapp.com/">
+                                <img src="./img/coteam.png" alt="Coteam landing page">
+                            </a>
+                        </div>           
                     </div>
                     <div data-aos="zoom-in-left" class="desc-section">
-                        <h1>Coteam</h1>
-                        <p>Coteam is a platform that allows users to create a social profile to share with their team to facilitate a better team engagement and environment.</p>
-                        <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, ReactJS, Redux, NodeJS, Express, MongoDB, mLAB, Mongoose, PassportJS, JWT, TravisCI, Heroku, Mocha & Chai </p> 
-                        <a class="github-link" href="https://github.com/MartinTirtawisata/coteam-client"><p>Coteam Github repository</p></a>
+                        <div class="desc-wrapper group">
+                            <h1>Coteam</h1>
+                            <p>Coteam is a platform that allows users to create a social profile to share with their team to facilitate a better team engagement and environment.</p>
+                            <p><span class="bold">Tech Used:</span> HTML, CSS, JavaScript, ReactJS, Redux, NodeJS, Express, MongoDB, mLAB, Mongoose, PassportJS, JWT, TravisCI, Heroku, Mocha & Chai </p> 
+                            <a class="github-link" href="https://github.com/MartinTirtawisata/coteam-client"><p>Coteam Github repository</p></a>
+                        </div>
                     </div>
                 </section>
             </div>
-            <hr>
-            <!-- Contact Form -->
-            <div id="contact-form" class="col-12">
-                <h1>Contact Form</h1>
-                <section>
-                    <div data-aos="zoom-in-up">
-                        <p>My email is <a href="mailto:martintirtawisata@gmail.com" target="_top">martintirtawisata@gmail.com</a>.</p>
+        </div>
+        <hr>
+        <!-- Contact Form -->
+        <div data-aos="zoom-in" class="contact-background-wrapper">
+            <div class="row">
+                <div id="contact-form" class="col-12">
+                    <h1 class="white">Contact Me</h1>
+                  
+                    <div class="contact-form">
+                        <div class="text-wrapper">
+                            <p class="white">I can be contacted here: <a class="white" href="mailto:martintirtawisata@gmail.com" target="_top">martintirtawisata@gmail.com</a>.</p>
+                            <p class="white">Or</p>
+                            <ul>
+                                <a href="https://www.linkedin.com/in/martin-tirtawisata/" target="_blank"><li><img src="./img/linkedin-logo.png" alt="linkedin-logo"></li></a>
+                                <a href="https://github.com/MartinTirtawisata" target="_blank"><li><img src="./img/github-logo.png" alt="github-logo"></li></a>
+                            </ul>
+                        </div>   
                     </div>
-                </section>
+                    
+                </div>
             </div>
         </div>
     </main>

@@ -3,11 +3,9 @@
 }
 
 html {
-    background-color: rgb(255,255,255);
-    background-image: url('./img/animate-char.png'), url('./img/cloud-net.png');
+    background-image: url('./img/animate-char.png');
     background-repeat: no-repeat;
-    background-position: right top, left top;
-    background-size: 50%, 25%;
+    background-position: top right;
 }
 
 body{
@@ -43,7 +41,7 @@ hr {
 
 /* Header */
 header{
-    
+    margin-top: 5em;
 }
 .navbar {
     width: 100%;
@@ -53,14 +51,7 @@ header{
 
 ul {
     list-style-type: none;
-}
-
-.left-nav {
-    float: left;
-}
-
-.right-nav{
-    float: right;
+    padding: 0;
 }
 
 li {
@@ -68,22 +59,51 @@ li {
     margin: 5px 8px;
     color: white;
     font-size: 18px;
+    transition: transform .1s;
+}
+
+li:hover {
+    transform: scale(1.1);
+    
+}
+
+li:active{
+    color: lightgrey;
 }
 
 .title {
-    margin: 50px 0;
+    margin: 3em auto;
     text-align: center;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.title-background-wrapper {
+    padding: 0 0 5em 0;
+    background-image:linear-gradient(to bottom right, rgba(21,138,208, 1), rgba(21,138,208, 0.8), rgba(21,138,208, 0.5), rgba(21,138,208, 0.4));
+    clip-path: polygon(0 0, 1600px 0, 1600px 87%, 0 100%);
+}
+
+.contact-background-wrapper {
+    padding: 25px 0 0 0;
+    background-image:linear-gradient(to bottom right, rgba(21,138,208, 1), rgba(21,138,208, 0.8), rgba(21,138,208, 0.5), rgba(21,138,208, 0.4));
+    clip-path: polygon(0 10%, 1600px 0, 100% 90%, 0 100%);
+}
+
+.text-wrapper {
+    padding: 20px 0
 }
 
 .name {
     font-family: 'Rubik', sans-serif;
-    font-size: 28px;
-    margin: 20px 0 0 0;
-    color: rgb(14,94,140);
+    font-size: 40px;
+    margin: 5px;
+    color: white
 }
 
 .headline {
-    margin: 5 0;
+    margin: 10px 0;
+    color: white;
 }
 
 .bio {
@@ -99,7 +119,6 @@ section {
 
 .image-section{
     width: 60%;
-    border: 2px solid rgb(51,51,51);
     transition: transform .1s;
 }
 
@@ -120,11 +139,40 @@ img {
     text-align: center;
 }
 
+.desc-wrapper {
+    padding: 25px 0;
+}
+
+.map-location {
+    background-image: url('./img/map-location.png');
+    background-repeat: no-repeat;
+    background-size: 22%;
+    background-position: top left;
+}
+
+.invit-ims{
+    background-image: url('./img/invit-ims.png');
+    background-repeat: no-repeat;
+    background-size: 35%;
+    background-position: top right;
+}
+
+.group {
+    background-image: url('./img/group.png');
+    background-repeat: no-repeat;
+    background-size: 24%;
+    background-position: top left;
+}
+
+.white {
+    color: white;
+}
+
 .github-link {
     text-decoration: none;
 }
 
-.github-link > p {
+.github-link > p{
     color: rgb(21,138,208);
     transition: transform .1s;
 }
@@ -135,6 +183,7 @@ img {
 
 .contact-form{
     text-align: center;
+    margin: 5px auto;
 }
 
 footer {
@@ -149,4 +198,6 @@ footer > p {
     padding-top: 15px;
     color: white;
 }
+
+
 
