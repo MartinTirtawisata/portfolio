@@ -25,6 +25,7 @@ p {
     font-family: 'Work Sans', sans-serif;
     color: rgb(51,51,51);
     font-size: 18px;
+    word-break: break-word;
 }
 
 hr {
@@ -51,8 +52,6 @@ header{
 .title {
     margin: 3em auto;
     text-align: center;
-    width: 500px;
-    border-radius: 10px;
 }
 
 .text-wrapper {
@@ -69,11 +68,6 @@ header{
 .headline {
     margin: 10px 0;
     color: white;
-}
-
-.bio {
-    width: 700px;
-    margin: 50px auto;
 }
 
 ul {
@@ -97,6 +91,15 @@ li:hover {
 li:active{
     color: lightgrey;
 }
+
+.bio-section {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.bio-wrapper{
+    text-align: center;
+}
 /* ====================== */
 
 /* Project Section */
@@ -106,7 +109,6 @@ li:active{
 }
 
 section {
-    /* display: flex; */
     margin: 50px 0px
 }
 
