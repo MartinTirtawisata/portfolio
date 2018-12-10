@@ -55,4 +55,66 @@
     .col-12 {
         width: 100%;
     }
+
+    html{
+        background-size: 150%;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    li {
+        font-size: 16px;
+    }
+
+    .name {
+        font-size: 28px;
+    }
+
+    .map-location {
+        background-size: 25%;
+    }
+
+    .invit-ims {
+        background-size: 35%;
+    }
+
+    .coteam-img {
+        background-size: 22%;
+    }
+}
+
+@media only screen and (min-width: 641px) {
+    .map-location {
+        background-size: 12%;
+    }
+
+    .invit-ims {
+        background-size: 17%;
+    }
+
+    .coteam-img {
+        background-size: 12%;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    li {
+        font-size: 20px;
+    }
 }

@@ -16,7 +16,6 @@ body{
 
 h1 {
     font-family: 'Rubik', sans-serif;
-    font-size: 30px;
     color: rgb(14,94,140);
     text-align: center;
 }
@@ -24,7 +23,6 @@ h1 {
 p {
     font-family: 'Work Sans', sans-serif;
     color: rgb(51,51,51);
-    font-size: 18px;
     word-break: break-word;
 }
 
@@ -60,7 +58,7 @@ header{
 
 .name {
     font-family: 'Rubik', sans-serif;
-    font-size: 40px;
+    /* font-size: 40px; */
     margin: 5px;
     color: white
 }
@@ -143,21 +141,18 @@ img {
 .map-location {
     background-image: url('./img/map-location.png');
     background-repeat: no-repeat;
-    background-size: 12%;
     background-position: top left;
 }
 
 .invit-ims{
     background-image: url('./img/invit-ims.png');
     background-repeat: no-repeat;
-    background-size: 17%;
     background-position: top left;
 }
 
 .coteam-img {
     background-image: url('./img/group.png');
     background-repeat: no-repeat;
-    background-size: 12%;
     background-position: top left;
 }
 
