@@ -33,6 +33,7 @@ hr {
 .bold {
     font-weight: bold;
 }
+
 /* =========================== */
 
 /* Header */
@@ -98,6 +99,11 @@ li:active{
 .bio-wrapper{
     text-align: center;
 }
+
+.badge {
+    text-align: center;
+}
+
 /* ====================== */
 
 /* Project Section */
