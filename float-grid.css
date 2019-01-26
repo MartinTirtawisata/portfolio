@@ -77,15 +77,19 @@
     }
 
     .map-location {
-        background-size: 25%;
+        background-size: 10%;
     }
 
     .invit-ims {
-        background-size: 35%;
+        background-size: 13%;
     }
 
     .coteam-img {
-        background-size: 22%;
+        background-size: 10%;
+    }
+
+    section {
+        flex-direction: column;
     }
 }
 

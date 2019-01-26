@@ -78,7 +78,7 @@ li {
     margin: 5px 8px;
     color: white;
     font-size: 18px;
-    transition: transform .1s;
+    transition: transform .4s;
 }
 
 li:hover {
@@ -112,17 +112,20 @@ li:active{
 }
 
 section {
-    margin: 50px 0px
+    margin: 50px 0px;
+    display: flex;
+    max-width: 1100px;
+    border: 1px solid #f7f6f5;
+    background-color: #f7f6f5;
 }
 
 .image-section{
-    max-width: 900px;
-    margin: 0 auto;
-    transition: transform .1s;
+    transition: transform .4s;
+    flex: 0.5;
 }
 
 .image-section:hover {
-    transform: scale(1.02)
+    transform: scale(1.01)
 }
 
 img {
@@ -130,16 +133,17 @@ img {
 }
 
 .desc-section{
-    max-width: 900px;  
-    margin: 2px auto; 
+    padding: 5px;
+    flex: 0.5;
 }
 
-.desc-section > h1 {
+.desc-wrapper > h1 {
     text-align: center;
+    margin: 5px;
 }
 
 .desc-wrapper {
-    padding: 25px 0px;
+    padding: 5px 0px;
     text-align: center;
 }
 
@@ -171,7 +175,7 @@ img {
 
 .github-link > p{
     color: rgb(21,138,208);
-    transition: transform .1s;
+    transition: transform .4s;
 }
 
 .github-link > p:hover {
