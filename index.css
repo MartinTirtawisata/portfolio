@@ -1,6 +1,5 @@
 
 html {
-    background-image: url('./img/animate-char.png');
     background-repeat: no-repeat;
     background-position: top right;
 }
@@ -132,7 +131,7 @@ img {
 
 .desc-section{
     max-width: 900px;  
-    margin: 2 auto; 
+    margin: 2px auto; 
 }
 
 .desc-section > h1 {
