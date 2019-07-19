@@ -13,19 +13,22 @@ body{
     font-family: 'Rubik', sans-serif;
 }
 
-.sub-heading, .project-heading {
+.sub-heading, .project-heading, h3 {
     font-size: 24px;
     font-family: 'Rubik', sans-serif;
     color: rgb(14,94,140);
     text-align: center;
 }
 
-p {
+p, dt, dd {
     font-family: 'Work Sans', sans-serif;
-    color: rgb(51,51,51);
     word-break: break-word;
     font-size: 14px;
     word-spacing: 1px;
+}
+
+p {
+    color: rgb(51,51,51);
 }
 
 hr {
@@ -48,14 +51,17 @@ button:hover {
 
 a {
     text-decoration: none; 
+    cursor: pointer;
 }
 
 /* =========================== */
 
 /* Header */
 .title-background-wrapper {
-    padding: 0 0 5em 0;
-    background-image:linear-gradient(to bottom right, rgba(21,138,208, 1), rgba(21,138,208, 0.8), rgba(21,138,208, 0.5), rgba(21,138,208, 0.4));
+    padding: 6em 0 20em 0;
+    background-position: -180px 0px ;
+    background-image: url("./img/code-wallpaper.jpg");
+    /* background-image:linear-gradient(to bottom right, rgba(35,35,35, 0.5), rgba(35,35,35, 0.4), rgba(35,35,35, 0.2), rgba(35,35,35, 0.05)); */
 
     clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
@@ -87,12 +93,15 @@ header{
 }
 
 .hire-button{
-    background-color: rgb(11, 155, 238);
+    border: black;
+    position: relative;
 }
 
 .arrow-point-to-right{
     width: 13px;
-    margin-left: 5px;
+    margin-left: 4px;
+    position: relative;
+    top: 2px;
 }
 
 ul {
@@ -137,6 +146,21 @@ li:active{
 
 .skills-section {
     margin: 0px 20px
+}
+
+dl {
+    margin-bottom: 20px;
+}
+
+dt {
+    color: rgb(51, 51,51);
+    margin-bottom: 3px;
+}
+
+dd {
+    margin-left: 0px;
+    color: rgba(51,51,51,0.7);
+    margin-bottom: 15px;
 }
 
 /* ====================== */
@@ -222,26 +246,35 @@ img {
     color: white;
 }
 
-.github-link-button{
-    background-color: rgb(11, 155, 238);
+.github-link-button, .hire-button{
+    background-color: rgb(219, 138, 16);
+    cursor: pointer;
 }
 
-.github-link > p{
-    color: white;   
+
+button > p {
+    color: white;
 }
+
 
 /* ================== */
 
 /* Contact Form */
 .contact-background-wrapper {
     padding: 25px 0 0 0;
-    background-image:linear-gradient(to bottom right, rgba(21,138,208, 1), rgba(21,138,208, 0.8), rgba(21,138,208, 0.5), rgba(21,138,208, 0.4));
-    clip-path: polygon(0 10%, 100% 0, 100% 90%, 0 100%);
+    background-color: rgb(51, 51,51);
+    /* background-image:linear-gradient(to bottom right, rgba(21,138,208, 1), rgba(21,138,208, 0.8), rgba(21,138,208, 0.5), rgba(21,138,208, 0.4)); */
+    clip-path: polygon(0 10%, 100% 0, 100% 100%, 0 100%);
 }
 
 .contact-form{
     text-align: center;
-    margin: 5px auto;
+    margin: 100px auto;
+    padding: 100px;
+}
+
+.email-link {
+    text-decoration: underline;
 }
 
 /* ========================= */
