@@ -73,7 +73,11 @@
     }
 
     .name {
-        font-size: 28px;
+        font-size: 16px;
+    }
+
+    .headline {
+        font-size: 18px;
     }
 
     .map-location {
@@ -93,7 +97,7 @@
     }
 
     .personal-info-section{
-        display: block;
+        flex-direction: column;
     }
     
     img {
