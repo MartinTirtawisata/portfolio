@@ -76,20 +76,16 @@
         font-size: 28px;
     }
 
-    .map-location {
-        background-size: 10%;
-    }
-
-    .invit-ims {
-        background-size: 13%;
-    }
-
-    .coteam-img {
-        background-size: 10%;
-    }
-
     section {
         flex-direction: column;
+    }
+
+    .personal-info-section{
+        display: block;
+    }
+    
+    img {
+        width: 25%;
     }
 }
 
